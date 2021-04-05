@@ -1,43 +1,6 @@
-{
-	"Resources": {
-		"AWSNOv2020Ec201": {
-			"Type": "AWS::EC2::Instance",
-			"Properties": {
-				"ImageId": "{{resolve:ssm:/cloud-tcg-param/ImageId:1}}",
-				"InstanceType": "{{resolve:ssm:/cloud-tcg-param/instance-type:1}}",
-				"SubnetId": "{{resolve:ssm:/cloud-tcg-param/subnet:1}}",
-				"SecurityGroupIds": [{
-					"Fn::GetAtt": ["AWSNov2020Sg", "GroupId"]
-				}],
-				"KeyName": "supriyakey"
-			},
-			"DependsOn": [
-				"AWSNov2020Sg"
-			]
-		},
-		"AWSNov2020Sg": {
-			"Type": "AWS::EC2::SecurityGroup",
-			"Properties": {
-				"GroupDescription": "Dynamic security group from cft",
-				"GroupName": "my-first-new-sg",
-				"SecurityGroupIngress": [{
-						"IpProtocol": "tcp",
-						"FromPort": 80,
-						"ToPort": 80,
-						"CidrIp": "76.187.209.119/32"
-					},
-					{
-						"IpProtocol": "tcp",
-						"FromPort": 22,
-						"ToPort": 22,
-						"CidrIp": "0.0.0.0/0"
-					}
-				],
-				"VpcId": "vpc-1aae1767"
+ygGCkuagKHalkLKa
+fLHlakhLKAHFalkfjLF
+KJHFklahflAKHFlkahLKAHL
+khfkJHFKahKLHlk
 
-			}
-
-
-		}
-	}
-}
+kjhfjkAHFjahAJKHklhl
