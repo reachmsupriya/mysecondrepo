@@ -4,7 +4,7 @@
 	"Parameters": {
 		"UserKeys": {
 			"Type": "String",
-			"Description": "SSH PEM key name."
+			"Description": "SSH PEM key names."
 		},
 		"AmiID": {
 			"Type": "String",
