@@ -6,7 +6,7 @@
 			"Type": "String",
 			"Description": "SSH PEM key name."
 		},
-		"": {
+		"AmiID": {
 			"Type": "String",
 			"Description": "AMI for the talend instances."
 		},
